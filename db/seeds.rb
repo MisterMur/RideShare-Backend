@@ -23,7 +23,7 @@ User.create(name: "Zev", car:"Porsche", rating:"4.5", experience:2, location:"NY
 User.create(name: "Brian", car:"Tesla", rating:"4.9", experience:5, location:"NYC")
 
 UserCompany.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id)
-UserCompany.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Uber").id)
+UserCompany.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id)
 UserCompany.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Lyft").id)
 
 Message.create(user_id: User.find_by(name: "Jordan").id, forum_id: Forum.find_by(topic: "Newbs").id, content: "This is a message!")

@@ -2894,3 +2894,2277 @@ Processing by Api::V1::UsersController#index as HTML
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:29:01 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 21ms (Views: 9.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:29:03 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 22ms (Views: 12.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:29:22 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:32:05 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:38:00 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:38:18 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:46:52 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (1.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:48:23 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:54:05 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:54:48 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:56:13 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:56:40 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:58:40 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:58:40 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:14:16 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:14:16 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 6.1ms)
+
+
+Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:14:23 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:14:23 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 2.8ms)
+
+
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:16:03 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:17:13 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:18:18 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:22:51 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:22:51 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:24:21 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:24:21 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:24:54 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:24:54 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (2.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 2.6ms)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:01 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:01 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mCompany Load (3.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:02 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:02 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:02 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:02 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:03 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:03 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:04 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:04 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.0ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:04 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:04 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:05 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:05 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:10 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:10 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:10 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:10 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:11 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:11 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mCompany Load (2.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:11 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:11 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:11 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:11 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.3ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:11 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:11 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 1.0ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:12 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:12 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:58 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:58 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:25:59 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:25:59 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:00 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:00 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:01 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:01 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:01 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:01 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:02 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:02 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:03 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:03 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:03 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:03 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:04 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:04 -0400
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Processing by Api::V1::UsersController#index as */*
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:04 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:04 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:05 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:05 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:07 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:07 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:14 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:14 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:15 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:15 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:16 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:16 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.7ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:17 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:17 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 3.1ms)
+
+
+  [1m[36mCompany Load (3.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:17 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:17 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:26:27 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:26:27 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:27:40 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:27:40 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.4ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:27:45 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:27:45 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:28:16 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:28:16 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:28:35 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:28:35 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:28:57 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:28:57 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:29:43 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:29:43 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:29:46 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:29:46 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:29:58 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:29:58 -0400
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by Api::V1::CompaniesController#index as */*
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:30:57 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 94ms (Views: 72.0ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:31:41 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:31:41 -0400
+  [1m[36mCompany Load (3.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (2.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (31.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 46ms (Views: 8.1ms | ActiveRecord: 37.2ms)
+
+
+Completed 200 OK in 20ms (Views: 11.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:32:56 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:32:56 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:01 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:01 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 1.6ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:08 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:08 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:14 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:14 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:16 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:16 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 1.4ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:25 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:25 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:38 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:38 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:33:39 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:33:39 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:35:13 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:35:13 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:35:16 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:35:16 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (1.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mCompany Load (2.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (5.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 37ms (Views: 27.3ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:38:09 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:38:09 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 152ms (Views: 150.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:39:06 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:39:06 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:39:15 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:39:15 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mCompany Load (1.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:39:44 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:39:44 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:40:06 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:40:06 -0400
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+Processing by Api::V1::CompaniesController#index as */*
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:40:13 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:40:13 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 1.1ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:40:28 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:40:28 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (3.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 65ms (Views: 54.3ms | ActiveRecord: 10.1ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Destroy (2.8ms)[0m  [1m[31mDELETE FROM "companies" WHERE "companies"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Destroy (0.3ms)[0m  [1m[31mDELETE FROM "companies" WHERE "companies"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mForum Load (1.6ms)[0m  [1m[34mSELECT "forums".* FROM "forums"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mForum Destroy (0.4ms)[0m  [1m[31mDELETE FROM "forums" WHERE "forums"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUserCompany Load (0.4ms)[0m  [1m[34mSELECT "user_companies".* FROM "user_companies"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserCompany Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_companies" WHERE "user_companies"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserCompany Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_companies" WHERE "user_companies"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUserCompany Destroy (0.4ms)[0m  [1m[31mDELETE FROM "user_companies" WHERE "user_companies"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMessage Load (1.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMessage Destroy (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMessage Destroy (0.3ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mRide Load (1.0ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRide Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rides" WHERE "rides"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Uber"], ["created_at", "2019-03-25 18:41:43.258123"], ["updated_at", "2019-03-25 18:41:43.258123"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lyft"], ["created_at", "2019-03-25 18:41:43.260388"], ["updated_at", "2019-03-25 18:41:43.260388"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mForum Create (0.4ms)[0m  [1m[32mINSERT INTO "forums" ("topic", "tags", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["topic", "Newbs"], ["tags", "[\"Uber for life\", \"NYC\", \"driving\"]"], ["created_at", "2019-03-25 18:41:43.262533"], ["updated_at", "2019-03-25 18:41:43.262533"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jordan"], ["car", "Jeep"], ["rating", 4], ["experience", 5], ["location", "NYC"], ["created_at", "2019-03-25 18:41:43.264873"], ["updated_at", "2019-03-25 18:41:43.264873"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Zev"], ["car", "Porsche"], ["rating", 4], ["experience", 2], ["location", "NYC"], ["created_at", "2019-03-25 18:41:43.267215"], ["updated_at", "2019-03-25 18:41:43.267215"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brian"], ["car", "Tesla"], ["rating", 4], ["experience", 5], ["location", "NYC"], ["created_at", "2019-03-25 18:41:43.269332"], ["updated_at", "2019-03-25 18:41:43.269332"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUserCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 3], ["user_id", 4], ["created_at", "2019-03-25 18:41:43.282962"], ["updated_at", "2019-03-25 18:41:43.282962"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUserCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 3], ["user_id", 4], ["created_at", "2019-03-25 18:41:43.288730"], ["updated_at", "2019-03-25 18:41:43.288730"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Zev"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Lyft"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUserCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 4], ["user_id", 5], ["created_at", "2019-03-25 18:41:43.294065"], ["updated_at", "2019-03-25 18:41:43.294065"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mForum Load (0.2ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."topic" = $1 LIMIT $2[0m  [["topic", "Newbs"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mForum Load (0.2ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "forum_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["forum_id", 2], ["content", "This is a message!"], ["created_at", "2019-03-25 18:41:43.300980"], ["updated_at", "2019-03-25 18:41:43.300980"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Zev"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mForum Load (0.3ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."topic" = $1 LIMIT $2[0m  [["topic", "Newbs"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mForum Load (0.2ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "forum_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 5], ["forum_id", 2], ["content", "This is another message!"], ["created_at", "2019-03-25 18:41:43.306325"], ["updated_at", "2019-03-25 18:41:43.306325"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mRide Create (0.4ms)[0m  [1m[32mINSERT INTO "rides" ("user_id", "company_id", "distance", "price", "started_at", "end_at", "start_location", "end_location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["user_id", 4], ["company_id", 3], ["distance", 2], ["price", 15], ["started_at", "2019-03-25 18:41:43.309157"], ["end_at", "2019-03-26 18:41:43.309180"], ["start_location", "NYC"], ["end_location", "Brooklyn"], ["created_at", "2019-03-25 18:41:43.314096"], ["updated_at", "2019-03-25 18:41:43.314096"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:42:06 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:42:06 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 57ms (Views: 7.7ms | ActiveRecord: 35.7ms)
+
+
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 75ms (Views: 38.2ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:43:33 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:43:33 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (1.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:43:39 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:43:39 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 74ms (Views: 66.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:43:50 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:43:50 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:44:46 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:44:46 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:45:37 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:45:37 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:45:52 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:45:52 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:47:10 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:47:10 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 1.4ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:47:38 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:47:38 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:48:36 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:48:36 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:49:03 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:49:03 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 2.6ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:49:04 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:49:04 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:49:08 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:49:08 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:50:26 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:50:26 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 1.1ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:50:27 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:50:27 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (5.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 87ms (Views: 77.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:52:57 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:52:57 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:04 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:04 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 2.6ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:06 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:06 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:18 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:18 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.0ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:21 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:21 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:47 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:47 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 1.1ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:51 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:51 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:53:57 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:53:57 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (3.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:55:02 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:55:02 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:57:46 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:57:46 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCompany Load (1.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 143ms (Views: 140.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:59:24 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:59:24 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.1ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 14:59:26 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 14:59:26 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 28ms (Views: 22.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:01:56 -0400
+Processing by Api::V1::UsersController#index as */*
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:01:56 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mCompany Load (0.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:02:13 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:02:13 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 2.0ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:02:41 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:02:41 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:02:42 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:02:42 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.6ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:05:05 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:05:05 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (5.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 5.0ms)
+
+
+  [1m[36mCompany Load (3.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 19ms (Views: 8.8ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:05:43 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:05:43 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.0ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:05:52 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:05:52 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 132ms (Views: 130.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:05:54 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:05:54 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (8.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 11ms (Views: 2.1ms | ActiveRecord: 8.9ms)
+
+
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (5.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (9.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 51ms (Views: 24.5ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:05:57 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:05:57 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (2.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:06:19 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:06:19 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:06:21 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:06:21 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.2ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:06:32 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:06:32 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 110ms (Views: 108.9ms | ActiveRecord: 1.2ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:06:36 -0400
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:06:36 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:06:43 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:06:43 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 1.2ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:07:33 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:07:33 -0400
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:07:35 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:07:35 -0400
+Processing by Api::V1::CompaniesController#index as */*
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:07:56 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:07:56 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCompany Load (1.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 80ms (Views: 76.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:07:59 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:07:59 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.9ms)
+
+
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:10:15 -0400
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:10:15 -0400
+Processing by Api::V1::UsersController#index as */*
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mCompany Load (1.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 15:10:23 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" INNER JOIN "user_companies" ON "companies"."id" = "user_companies"."company_id" WHERE "user_companies"."user_id" = $1[0m  [["user_id", 6]]
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 15:10:24 -0400
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 1.1ms)
+
+
+Processing by Api::V1::CompaniesController#index as */*
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
