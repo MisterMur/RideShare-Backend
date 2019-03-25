@@ -30,3 +30,7 @@ Message.create(user_id: User.find_by(name: "Jordan").id, forum_id: Forum.find_by
 Message.create(user_id: User.find_by(name: "Zev").id, forum_id: Forum.find_by(topic: "Newbs").id, content: "This is another message!")
 
 Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 15, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
+Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id, distance: 200, price: 20, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "LI", end_location: "Hamptons")
+Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Lyft").id, distance: 20, price: 40, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "Queens", end_location: "Bronx")
+Ride.create(user_id: User.find_by(name: "Brian").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 15, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
+Ride.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 15, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
