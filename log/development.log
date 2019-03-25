@@ -2434,3 +2434,463 @@ Migrating to RemoveColumnFromRides (20190325155339)
   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
   [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (441.4ms)[0m  [1m[35mCREATE DATABASE "rideshare-api_development" ENCODING = 'unicode'[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (328.8ms)[0m  [1m[35mCREATE DATABASE "rideshare-api_test" ENCODING = 'unicode'[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7515569900080295655)[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateCompanies (20190322202639)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190322202639_create_companies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190322202639"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateForums (20190325151029)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "forums" ("id" bigserial primary key, "topic" character varying, "tags" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190325151029_create_forums.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325151029"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20190325151446)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "car" character varying, "rating" integer, "experience" integer, "location" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190325151446_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325151446"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUserCompanies (20190325152535)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "user_companies" ("id" bigserial primary key, "company_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190325152535_create_user_companies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325152535"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateMessages (20190325153824)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "user_id" integer, "forum_id" integer, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190325153824_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325153824"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateRides (20190325154620)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "user_id" integer, "company_id" integer, "duration" integer, "distance" integer, "price" integer, "started_at" timestamp, "end_at" timestamp, "start_location" character varying, "end_location" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190325154620_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325154620"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to RemoveColumnFromRides (20190325155339)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "rides" DROP COLUMN "duration"[0m
+  ↳ db/migrate/20190325155339_remove_column_from_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190325155339"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-25 17:12:50.675685"], ["updated_at", "2019-03-25 17:12:50.675685"]]
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7515569900080295655)[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mForum Load (0.4ms)[0m  [1m[34mSELECT "forums".* FROM "forums"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUserCompany Load (0.6ms)[0m  [1m[34mSELECT "user_companies".* FROM "user_companies"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMessage Load (3.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCompany Create (0.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Uber"], ["created_at", "2019-03-25 17:13:02.102709"], ["updated_at", "2019-03-25 17:13:02.102709"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lyft"], ["created_at", "2019-03-25 17:13:02.105381"], ["updated_at", "2019-03-25 17:13:02.105381"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mForum Create (0.6ms)[0m  [1m[32mINSERT INTO "forums" ("topic", "tags", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["topic", "Newbs"], ["tags", "[\"Uber for life\", \"NYC\", \"driving\"]"], ["created_at", "2019-03-25 17:13:02.112878"], ["updated_at", "2019-03-25 17:13:02.112878"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jordan"], ["car", "Jeep"], ["rating", 4], ["experience", 5], ["location", "NYC"], ["created_at", "2019-03-25 17:13:02.129795"], ["updated_at", "2019-03-25 17:13:02.129795"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Zev"], ["car", "Porsche"], ["rating", 4], ["experience", 2], ["location", "NYC"], ["created_at", "2019-03-25 17:13:02.132709"], ["updated_at", "2019-03-25 17:13:02.132709"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "car", "rating", "experience", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brian"], ["car", "Tesla"], ["rating", 4], ["experience", 5], ["location", "NYC"], ["created_at", "2019-03-25 17:13:02.134956"], ["updated_at", "2019-03-25 17:13:02.134956"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mUserCompany Create (0.7ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 1], ["user_id", 1], ["created_at", "2019-03-25 17:13:02.165315"], ["updated_at", "2019-03-25 17:13:02.165315"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Zev"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUserCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 1], ["user_id", 2], ["created_at", "2019-03-25 17:13:02.173377"], ["updated_at", "2019-03-25 17:13:02.173377"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Zev"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Lyft"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUserCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "user_companies" ("company_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["company_id", 2], ["user_id", 2], ["created_at", "2019-03-25 17:13:02.181216"], ["updated_at", "2019-03-25 17:13:02.181216"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mForum Load (0.3ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."topic" = $1 LIMIT $2[0m  [["topic", "Newbs"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mForum Load (0.3ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "forum_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["forum_id", 1], ["content", "This is a message!"], ["created_at", "2019-03-25 17:13:02.198889"], ["updated_at", "2019-03-25 17:13:02.198889"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Zev"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mForum Load (0.2ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."topic" = $1 LIMIT $2[0m  [["topic", "Newbs"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mForum Load (0.2ms)[0m  [1m[34mSELECT  "forums".* FROM "forums" WHERE "forums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "forum_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["forum_id", 1], ["content", "This is another message!"], ["created_at", "2019-03-25 17:13:02.204484"], ["updated_at", "2019-03-25 17:13:02.204484"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."name" = $1 LIMIT $2[0m  [["name", "Uber"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mRide Create (0.6ms)[0m  [1m[32mINSERT INTO "rides" ("user_id", "company_id", "distance", "price", "started_at", "end_at", "start_location", "end_location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["user_id", 1], ["company_id", 1], ["distance", 2], ["price", 15], ["started_at", "2019-03-25 17:13:02.207496"], ["end_at", "2019-03-26 17:13:02.207691"], ["start_location", "NYC"], ["end_location", "Brooklyn"], ["created_at", "2019-03-25 17:13:02.229252"], ["updated_at", "2019-03-25 17:13:02.229252"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+Started GET "/" for ::1 at 2019-03-25 13:19:41 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-03-25 13:19:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/scores" for ::1 at 2019-03-25 13:19:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/scores"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:19:50 -0400
+  
+LoadError (Unable to autoload constant Api::V1::UsersController, expected /Users/zevspilman/Development/MOD4/Poject/RideShare-Backend/app/controllers/api/v1/users_controller.rb to define it):
+  
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/user" for ::1 at 2019-03-25 13:19:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rails/info/routes" for ::1 at 2019-03-25 13:20:03 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [41 times] (14.6ms)
+  Rendered /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 13:20:26 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zevspilman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:20:29 -0400
+  
+LoadError (Unable to autoload constant Api::V1::UsersController, expected /Users/zevspilman/Development/MOD4/Poject/RideShare-Backend/app/controllers/api/v1/users_controller.rb to define it):
+  
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:298:in `const_get'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:298:in `block in constantize'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.2.1) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/companies" for ::1 at 2019-03-25 13:21:37 -0400
+Processing by Api::V1::CompaniesController#index as HTML
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/controllers/api/v1/companies_controller.rb:4
+Completed 200 OK in 22ms (Views: 6.5ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:22:30 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 18ms (Views: 7.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:23:27 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-03-25 13:24:31 -0400
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
