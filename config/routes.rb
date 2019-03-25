@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :rides
+  resources :messages
+  resources :user_companies
+  resources :users
+  resources :forums
   namespace :api do
     namespace :v1 do
       resources :companies
