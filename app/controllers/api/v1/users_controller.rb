@@ -16,10 +16,9 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def update
-    # byebug
+    byebug
     @user = get_user
     @user.update(user_params)
-
     render json: @user
   end
 
@@ -32,7 +31,9 @@ class Api::V1::UsersController < ApplicationController
     params.require(:user).permit(:name,:experience,:location,:rating,:companies)
   end
 
-
+  def company_params
+    params.require(:companies).permit(:companies)
+  end
 
 
 end
