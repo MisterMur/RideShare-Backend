@@ -31,9 +31,7 @@ class Api::V1::UsersController < ApplicationController
     params.require(:user).permit(:name,:experience,:location,:rating,:companies)
   end
 
-  def company_params
-    params.require(:companies).permit(:companies)
-  end
+
 
 
 end
