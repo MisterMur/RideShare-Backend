@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users=User.all
-    render json: @users, :include => [:companies,:rides,:messages,:forums]
+    render json: @users, :include => [:companies,:rides,:messages,:forums, :followers]
   end
 
   def show
@@ -44,7 +44,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name,:experience,:location,:rating,:companies, :car)
+    params.require(:user).permit(:name,:experience,:location,:rating,:companies,:car)
   end
 
   def company_params
