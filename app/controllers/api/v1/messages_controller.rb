@@ -2,11 +2,12 @@ class Api::V1::MessagesController < ApplicationController
 
   def index
     @messages=Message.all
-    render json: @messages
+    render json: @messages, :include => [:user, :forum]
   end
 
   def show
     @message = get_message
+    render json: @message, :include => [:user, :forum]
   end
 
   def create
@@ -16,7 +17,7 @@ class Api::V1::MessagesController < ApplicationController
 
   def update
     @message = get_message.update(message_params)
-    render json:@message
+    render json: @message
 
   end
 
@@ -26,7 +27,7 @@ class Api::V1::MessagesController < ApplicationController
   end
 
   def message_params
-    params.require(:messages).permit(:name)
+    params.require(:message).permit(:user_id, :forum_id, :content, :user, :forum)
   end
 
 
