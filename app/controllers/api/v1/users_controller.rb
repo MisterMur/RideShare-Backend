@@ -7,7 +7,7 @@ class Api::V1::UsersController < ApplicationController
 
   def show
     @user = get_user
-    render json: @user
+    render json: @user, :include => [:companies,:rides,:messages,:forums, :followers]
   end
 
   def create
@@ -25,7 +25,6 @@ class Api::V1::UsersController < ApplicationController
     # end
 
     # puts companies
-    # byebug
     companies = []
     company_params.each do|c|
       company = Company.find(c[:id])
@@ -33,9 +32,10 @@ class Api::V1::UsersController < ApplicationController
     end
     # byebug
     @user.companies = companies
+    # byebug
 
 
-    render json: @user
+    render json: @user, :include => [:companies,:rides,:messages,:forums, :followers]
   end
 
   private
