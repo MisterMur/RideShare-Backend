@@ -2,11 +2,13 @@ class Api::V1::ForumsController < ApplicationController
 
   def index
     @forums=Forum.all
-    render json: @forums
+    render json: @forums, :include => [:messages]
   end
+
 
   def show
     @forum = get_forum
+    render json: @forum, :include => [:messages]
   end
 
   def create
