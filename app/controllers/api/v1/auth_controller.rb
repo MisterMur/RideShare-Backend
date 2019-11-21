@@ -1,5 +1,5 @@
 class Api::V1::AuthController < ApplicationController
-
+  # skip_before_action :authorized, only: [:create]
   def login
     # byebug
     user = User.find_by(username: params[:username])
@@ -9,7 +9,9 @@ class Api::V1::AuthController < ApplicationController
       # -> the token will help us identify and validate our client
 
       jwt = encode_token({user_id: user.id})
-      render json: {user: UserSerializer.new(user), jwt: jwt}
+      # render json: {user: UserSerializer.new(user), jwt: jwt}
+      render json: {user: user :include =>[:companies,:rides,:messages,:forums,:followers], jwt: jwt}
+
     else
       render json: {errors: "Please enter the correct username and password!"}
     end

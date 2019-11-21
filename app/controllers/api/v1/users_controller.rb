@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+  # skip_before_action :authorized, only: [:create]
 
   def index
     @users=User.all
@@ -11,8 +12,31 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    render json: @user
+    # @user = User.create(user_params)
+    # render json: @user
+    # byebug
+
+    # user = User.new(user_params)
+    user = User.new(
+      name: params[:name],
+      username: params[:username],
+      password: params[:password],
+      rating: "0.0",
+      experience: 0,
+      location: "",
+      car: "",
+      companies: []
+
+    )
+
+		if user.save
+			# JWT.encode(payload, 'secret')
+			jwt = encode_token({user_id: user.id})
+      render json: user, jwt: jwt,:include =>[:companies,:rides,:messages,:forums,:followers]
+			# render json: {user: UserSerializer.new(user), jwt: jwt}
+		else
+			render json: {errors: user.errors.full_messages}
+		end
   end
 
   def update
@@ -43,7 +67,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name,:experience,:location,:rating,:companies,:car)
+    params.require(:user).permit(:username,:password,:name,:experience,:location,:rating,:companies,:car)
   end
 
   def company_params

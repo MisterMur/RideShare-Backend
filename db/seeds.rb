@@ -21,17 +21,17 @@ Forum.create(topic: "LyftLyfe", tags: ["Lyft for life", "NYC", "driving"])
 Forum.create(topic: "NYC Drivers", tags: ["Uber for life", "NYC", "driving"])
 Forum.create(topic: "Bk ", tags: ["Uber for life", "NYC", "driving"])
 
-User.create(name: "Jordan", car:"Jeep", rating:"4.8", experience:5, location:"NYC")
-User.create(name: "Zev", car:"Porsche", rating:"4.5", experience:2, location:"NYC")
-User.create(name: "Brian", car:"Tesla", rating:"4.9", experience:5, location:"NYC")
+User.create(username: "Jordan", password_digest: "1234", name: "Jordan", car:"Jeep", rating:"4.8", experience:5, location:"NYC")
+User.create(username: "Zev", password_digest: "1234", name: "Zev", car:"Porsche", rating:"4.5", experience:2, location:"NYC")
+User.create(username: "brian", password_digest: "1234", name: "Brian", car:"Tesla", rating:"4.9", experience:5, location:"NYC")
 
-User.create(name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
-User.create(name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
-User.create(name: "Mike Chang", car:"Prius", rating:"4.5", experience:100, location:"Japan")
+User.create(username: "Zach", password_digest: "1234", name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
+User.create(username: "Evans", password_digest: "1234", name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
+User.create(username: "MChang", password_digest: "1234", name: "Mike Chang", car:"Prius", rating:"4.5", experience:100, location:"Japan")
 
-User.create(name: "Melissa", car:"Mini Cooper", rating:"4.6", experience:8, location:"Boston")
-User.create(name: "Brandon", car:"T-Rex", rating:"3.8", experience:3, location:"NYC")
-User.create(name: "Humzah", car:"Civic Sport", rating:"3.5", experience:2, location:"Oklahoma City")
+User.create(username: "Melissa", password_digest: "1234", name: "Melissa", car:"Mini Cooper", rating:"4.6", experience:8, location:"Boston")
+User.create(username: "Brandon", password_digest: "1234", name: "Brandon", car:"T-Rex", rating:"3.8", experience:3, location:"NYC")
+User.create(username: "Humzah", password_digest: "1234", name: "Humzah", car:"Civic Sport", rating:"3.5", experience:2, location:"Oklahoma City")
 
 
 UserCompany.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id)
