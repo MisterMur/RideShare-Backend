@@ -1,8 +1,8 @@
 class Api::V1::FriendshipsController < ApplicationController
   def index
     # @friendships=Friendship.all
-    @active_relationships = @follower.active_relationships
-    @passive_relationships = @follower.passive_relationships
+    @active_relationships = curr_user.active_relationships
+    @passive_relationships = curr_user.passive_relationships
     # render json: @friendships
   end
 
@@ -13,14 +13,14 @@ class Api::V1::FriendshipsController < ApplicationController
   def create
     # byebug
     @followed_user = User.find(params[:friendship][:followee_id])
-    @friendship = @follower.active_relationships.new(followee_id: @followed_user.id)
+    @friendship = curr_user.active_relationships.new(followee_id: @followed_user.id)
 
     render json: @friendship
   end
 
   def destroy
     @friendship = Friendship.find(params[:id])
-    if @friendship.follower_user == @follower
+    if @friendship.follower_user == curr_user
       @friendship.destroy
     end
   end

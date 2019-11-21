@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users=User.all
-    render json: @users, :include => [:companies,:rides,:messages,:forums,:followers]
+    render json: @users, :include => [:companies,:rides,:messages,:forums]#,:followers]
   end
 
   def show
