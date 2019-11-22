@@ -3,12 +3,12 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users=User.all
-    render json: @users, :include => [:companies,:rides,:messages,:forums]#,:followers]
+    render json: @users#, :include => [:companies,:rides,:messages,:forums]#,:followers]
   end
 
   def show
     @user = get_user
-    render json: @user, :include => [:companies,:rides,:messages,:forums,:followers]
+    render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
   def create
@@ -58,7 +58,7 @@ class Api::V1::UsersController < ApplicationController
     @user.companies = companies
     # byebug
 
-    render json: @user, :include => [:companies,:rides,:messages,:forums,:followers]
+    render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
   private

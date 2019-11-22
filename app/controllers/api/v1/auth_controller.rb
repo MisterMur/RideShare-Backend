@@ -10,7 +10,7 @@ class Api::V1::AuthController < ApplicationController
 
       jwt = encode_token({user_id: @user.id})
       # render json: {user: UserSerializer.new(user), jwt: jwt}
-      byebug
+      # byebug
       render json: {user: @user, jwt: jwt}
 
 
