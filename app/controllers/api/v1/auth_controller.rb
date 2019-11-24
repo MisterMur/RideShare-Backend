@@ -2,16 +2,16 @@ class Api::V1::AuthController < ApplicationController
   # skip_before_action :authorized, only: [:create]
   def login
     # byebug
-    @user = User.find_by(username: params[:username])
-    if @user && @user.authenticate(params[:password])
+    user = User.find_by(username: params[:username])
+    if user && user.authenticate(params[:password])
       # prove that the user exists in our database
       # -> lets send them a token!
       # -> the token will help us identify and validate our client
 
-      jwt = encode_token({user_id: @user.id})
-      # render json: {user: UserSerializer.new(user), jwt: jwt}
+      jwt = encode_token({user_id: user.id})
+      render json: {user: UserSerializer.new(user), jwt: jwt}
       # byebug
-      render json: {user: @user, jwt: jwt}
+      # render json: {user: @user, jwt: jwt}
 
 
       # render json: {user: user :include =>[:companies,:rides,:messages,:forums,:followers], jwt: jwt}
@@ -27,10 +27,10 @@ class Api::V1::AuthController < ApplicationController
       # -> is there a token
       # -> decode the token
       # -> send back user
-    @user = curr_user
+    user = curr_user
 
-    if @user
-      render json: @user
+    if user
+      render json: user
     else
       render json: {errors: "I dont think so"}
     end

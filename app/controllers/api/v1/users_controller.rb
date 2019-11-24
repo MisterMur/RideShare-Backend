@@ -3,12 +3,13 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users=User.all
-    render json: @users#, :include => [:companies,:rides,:messages,:forums]#,:followers]
+    render json: @users, :include => [:companies,:rides,:messages,:forums]#,:followers]
   end
 
   def show
     @user = get_user
-    render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
+    # render json: {user: UserSerializer.new(@user),jwt: jwt}
+    render json: @user, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
   def create
@@ -32,16 +33,19 @@ class Api::V1::UsersController < ApplicationController
 		if user.save
 			# JWT.encode(payload, 'secret')
 			jwt = encode_token({user_id: user.id})
-      render json: user, jwt: jwt,:include =>[:companies,:rides,:messages,:forums,:followers]
-			# render json: {user: UserSerializer.new(user), jwt: jwt}
+      # render json: {user: user, :include =>[ :companies,:rides,:messages,:forums,:followers]}
+			render json: {user: UserSerializer.new(user), jwt: jwt}
+      # render json: {user: user,jwt: jwt}
+
 		else
 			render json: {errors: user.errors.full_messages}
 		end
   end
 
   def update
-    @user = get_user
-    @user.update(user_params)
+    # byebug
+    user = get_user
+    user.update(user_params)
 
     # companies = []
     # company_params.each do|company|
@@ -55,10 +59,20 @@ class Api::V1::UsersController < ApplicationController
       companies << company
     end
     # byebug
-    @user.companies = companies
+    user.companies = companies
     # byebug
+    # byebug
+    if @user.save
+      # JWT.encode(payload, 'secret')
+      jwt = encode_token({user_id: user.id})
+      # render json:{ user: user, :include =>[:companies,:rides,:messages,:forums,:followers]}
+      render json: {user: UserSerializer.new(user), jwt: jwt}
+      # render json: {user: @user,jwt: jwt}
+    else
+      render json: {errors: user.errors.full_messages}
+    end
 
-    render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
+    # render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
   private
