@@ -5,5 +5,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :rides
   has_many :messages
   has_many :forums
-  has_many :friendships
+  has_many :followers
 end
