@@ -48,7 +48,7 @@ Give an example
 ## Deployment
 
 * [WebApp](https://rideshare-frontend.netlify.com/) - Front end is deployed using Netlify.com
-* [API] (https://ride-share-api.herokuapp.com/) - Backend API is deployed using heroku.com
+* [API](https://ride-share-api.herokuapp.com/) - Backend API is deployed using heroku.com
 
 ## Built With
 
