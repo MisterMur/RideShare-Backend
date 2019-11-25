@@ -5,10 +5,7 @@ class ApplicationController < ActionController::API
      # -> send back user id
 
   def encode_token(payload)
-    # byebug
    JWT.encode(payload, ENV['KEY'])
-   # payload {user_id: 1}
-   # => enaj.fewfwaf.dfadf
   end
 
   def decode_token

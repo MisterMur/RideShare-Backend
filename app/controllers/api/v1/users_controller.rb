@@ -8,16 +8,10 @@ class Api::V1::UsersController < ApplicationController
 
   def show
     @user = get_user
-    # render json: {user: UserSerializer.new(@user),jwt: jwt}
     render json: @user, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
   def create
-    # @user = User.create(user_params)
-    # render json: @user
-    # byebug
-
-    # user = User.new(user_params)
     user = User.new(
       name: params[:name],
       username: params[:username],
@@ -31,51 +25,35 @@ class Api::V1::UsersController < ApplicationController
     )
 
 		if user.save
-			# JWT.encode(payload, 'secret')
 			jwt = encode_token({user_id: user.id})
-      # render json: {user: user, :include =>[ :companies,:rides,:messages,:forums,:followers]}
 			render json: {user: UserSerializer.new(user), jwt: jwt}
-      # render json: {user: user,jwt: jwt}
-
 		else
 			render json: {errors: user.errors.full_messages}
 		end
   end
 
   def update
-    # byebug
     user = get_user
     user.update(user_params)
 
-    # companies = []
-    # company_params.each do|company|
-    #   companies << company
-    # end
-
-    # puts companies
     companies = []
     company_params.each do|c|
       company = Company.find(c[:id])
       companies << company
     end
-    # byebug
     user.companies = companies
-    # byebug
-    # byebug
+
     if @user.save
-      # JWT.encode(payload, 'secret')
       jwt = encode_token({user_id: user.id})
-      # render json:{ user: user, :include =>[:companies,:rides,:messages,:forums,:followers]}
       render json: {user: UserSerializer.new(user), jwt: jwt}
-      # render json: {user: @user,jwt: jwt}
     else
       render json: {errors: user.errors.full_messages}
     end
 
-    # render json: @user#, :include => [:companies,:rides,:messages,:forums,:followers]
   end
 
-  private
+private
+
   def get_user
     @user=User.find(params[:id])
   end
@@ -89,6 +67,5 @@ class Api::V1::UsersController < ApplicationController
       company.permit(:id, :name, :created_at, :updated_at)
     end
   end
-
 
 end

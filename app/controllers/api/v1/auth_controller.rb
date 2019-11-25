@@ -10,13 +10,9 @@ class Api::V1::AuthController < ApplicationController
 
       jwt = encode_token({user_id: user.id})
       render json: {user: UserSerializer.new(user), jwt: jwt}
-      # byebug
-      # render json: {user: @user, jwt: jwt}
-
-
-      # render json: {user: user :include =>[:companies,:rides,:messages,:forums,:followers], jwt: jwt}
 
     else
+      
       render json: {errors: "Please enter the correct username and password!"}
     end
   end
