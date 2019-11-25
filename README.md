@@ -54,7 +54,6 @@ Give an example
 
 * [Rails](http://www.dropwizard.io/1.0.2/docs/) - The API framework used
 * [Heroku](https://heroku.org/) - Deployment
-* [PaperClip](https://github.com/thoughtbot/paperclip/) - Used to store Images to Database
 
 ## Contributing
 
