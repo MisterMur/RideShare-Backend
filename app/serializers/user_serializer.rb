@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-	attributes :id, :name, :username, :password_digest, :rating, :experience, :location
+	attributes :id, :car, :name, :username, :password_digest, :rating, :experience, :location
 
 	has_many :companies
   has_many :rides
