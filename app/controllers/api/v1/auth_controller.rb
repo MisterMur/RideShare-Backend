@@ -1,5 +1,6 @@
 class Api::V1::AuthController < ApplicationController
   # skip_before_action :authorized, only: [:create]
+  # before_action :require_login
   def login
     # byebug
     user = User.find_by(username: params[:username])
@@ -12,7 +13,7 @@ class Api::V1::AuthController < ApplicationController
       render json: {user: UserSerializer.new(user), jwt: jwt}
 
     else
-      
+
       render json: {errors: "Please enter the correct username and password!"}
     end
   end
@@ -23,12 +24,19 @@ class Api::V1::AuthController < ApplicationController
       # -> is there a token
       # -> decode the token
       # -> send back user
-    user = curr_user
-
-    if user
-      render json: user
-    else
-      render json: {errors: "I dont think so"}
-    end
+      # debugger
+      if session_user
+        render json: session_user
+      else
+        render json: {errors: "no users logged in"}
+      end
   end
+  # user = curr_user
+  #
+  # if user
+  #   render json: user
+  # else
+  #   render json: {errors: "I dont think so"}
+  # end
+
 end
