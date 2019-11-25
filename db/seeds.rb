@@ -14,11 +14,11 @@ Message.destroy_all
 Ride.destroy_all
 
 # Returns the hash digest of the given string.
-def User.digest(string)
-  cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-                                                BCrypt::Engine.cost
-  BCrypt::Password.create(string, cost: cost)
-end
+# def User.digest(string)
+#   cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+#                                                 BCrypt::Engine.cost
+#   BCrypt::Password.create(string, cost: cost)
+# end
 
 Company.create(name: "Uber")
 Company.create(name: "Lyft")
@@ -30,20 +30,20 @@ Forum.create(topic: "Bk ", tags: ["Uber for life", "NYC", "driving"])
 
 
 User.create!(name: 'Jordan',username:'Jordan', car:"Jeep", rating:"4.8",
-  experience:5, location:"NYC", password_digest: User.digest('1234') )
+experience:5, location:"NYC", password_digest: BCrypt::Password.create('1234') )
 
-  User.create!(name: 'Zev',username:'Zev', car:"Porsche", rating:"4.5",
-    experience:2, location:"NYC", password_digest: User.digest('1234'))
-    User.create!(name: 'Brian',username:'bri', car:"Infiniti Q50s", rating:"4.8",
-      experience:5, location:"NYC", password_digest: User.digest('1234') )
+User.create!(name: 'Zev',username:'Zev', car:"Porsche", rating:"4.5",
+  experience:2, location:"NYC", password_digest: BCrypt::Password.create('1234'))
+User.create!(name: 'Brian',username:'bri', car:"Infiniti Q50s", rating:"4.8",
+  experience:5, location:"NYC",password_digest: BCrypt::Password.create('1234') )
 
-User.create(username: "Zach",  password_digest: User.digest('1234'), name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
-User.create(username: "Evans",  password_digest: User.digest('1234'), name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
-User.create(username: "MChang",  password_digest: User.digest('1234'), name: "Mike Chang", car:"Prius", rating:"4.5", experience:100, location:"Japan")
+User.create(username: "Zach", password_digest: BCrypt::Password.create('1234'), name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
+User.create(username: "Evans",   password_digest: BCrypt::Password.create('1234'), name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
+User.create(username: "MChang", password_digest: BCrypt::Password.create('1234'), name: "Mike Chang", car:"Prius", rating:"4.5", experience:100, location:"Japan")
 
-User.create(username: "Melissa",  password_digest: User.digest('1234'), name: "Melissa", car:"Mini Cooper", rating:"4.6", experience:8, location:"Boston")
-User.create(username: "Brandon",  password_digest: User.digest('1234'), name: "Brandon", car:"T-Rex", rating:"3.8", experience:3, location:"NYC")
-User.create(username: "Humzah",  password_digest: User.digest('1234'), name: "Humzah", car:"Civic Sport", rating:"3.5", experience:2, location:"Oklahoma City")
+User.create(username: "Melissa",   password_digest: BCrypt::Password.create('1234'), name: "Melissa", car:"Mini Cooper", rating:"4.6", experience:8, location:"Boston")
+User.create(username: "Brandon",   password_digest: BCrypt::Password.create('1234'), name: "Brandon", car:"T-Rex", rating:"3.8", experience:3, location:"NYC")
+User.create(username: "Humzah",   password_digest: BCrypt::Password.create('1234'), name: "Humzah", car:"Civic Sport", rating:"3.5", experience:2, location:"Oklahoma City")
 
 
 UserCompany.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id)

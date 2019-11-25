@@ -8,6 +8,12 @@ class User < ApplicationRecord
   validates :username,uniqueness: true
   has_secure_password
 
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
 # has_many :active_relationships, class_name: "Friendship", foreign_key: "follower_id", dependent: :destroy
 # has_many :passive_relationships, class_name: "Friendship", foreign_key: "followee_id", dependent: :destroy
 # has_many :followers, :through => :active_relationships, :source => <name>'
