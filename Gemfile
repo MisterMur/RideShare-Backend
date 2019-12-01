@@ -19,6 +19,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+# amazon s3 storage Gem
+gem 'aws-sdk-s3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

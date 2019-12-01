@@ -2,6 +2,7 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 
+projectDir = Rails.root.join('app','res').to_s
 #####RESET DATABASE DATA
 Company.destroy_all
 Forum.destroy_all
@@ -36,6 +37,11 @@ User.create(username: "MChang", password_digest: BCrypt::Password.create('1234')
 User.create(username: "Melissa",   password_digest: BCrypt::Password.create('1234'), name: "Melissa", car:"Mini Cooper", rating:"4.6", experience:8, location:"Boston")
 User.create(username: "Brandon",   password_digest: BCrypt::Password.create('1234'), name: "Brandon", car:"T-Rex", rating:"3.8", experience:3, location:"NYC")
 User.create(username: "Humzah",   password_digest: BCrypt::Password.create('1234'), name: "Humzah", car:"Civic Sport", rating:"3.5", experience:2, location:"Oklahoma City")
+
+User.all.each_with_index { |u,idx|
+  # byebug
+  u.profile_pic.attach(io: File.open(projectDir+"/driver#{1+idx}.jpg"), filename: "driver#{1+idx}.jpg", content_type: "image/jpg")
+}
 
 #########
 ### USERCOMPANY JOIN DATA

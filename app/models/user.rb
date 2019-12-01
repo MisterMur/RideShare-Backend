@@ -5,8 +5,10 @@ class User < ApplicationRecord
   has_many :forums, through: :messages
   has_many :rides
 
+  has_one_attached :profile_pic
+
   validates :username,uniqueness: true
-  
+
   has_secure_password
 
 ###########
@@ -20,6 +22,16 @@ class User < ApplicationRecord
 # has_many :followees, through: :passive_relationships, source: :follower_user
 
 ####################
+include Rails.application.routes.url_helpers
+def image_url
+    profile_pic.service_url
+end
+# Rails.application.routes.url_helpers.rails_blob_path(self.profile_pic, only_path: true)
+
+ #
+ # def image_url
+ #   rails_blob_path(self.cover, disposition: "attachment", only_path: true)
+ # end
 
 has_many :follower_follows, foreign_key: :followee_id, class_name: "Friendship"
   has_many :followers, through: :follower_follows, source: :follower
