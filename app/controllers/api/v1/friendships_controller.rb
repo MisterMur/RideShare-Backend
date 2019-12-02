@@ -1,7 +1,9 @@
 class Api::V1::FriendshipsController < ApplicationController
   def index
-    @friendships=Friendship.all
-    render json: @friendships
+    # @friendships=Friendship.all
+    @active_relationships = curr_user.active_relationships
+    @passive_relationships = curr_user.passive_relationships
+    # render json: @friendships
   end
 
   def show
@@ -9,14 +11,22 @@ class Api::V1::FriendshipsController < ApplicationController
   end
 
   def create
-    @friendship = Friendship.create(friendship_params)
+    # byebug
+    @followed_user = User.find(params[:friendship][:followee_id])
+    @friendship = curr_user.active_relationships.new(followee_id: @followed_user.id)
+
     render json: @friendship
   end
 
-  def update
-    @friendship = get_friendship.update(friendship_params)
-    render json:@friendship
+  def destroy
+    @friendship = Friendship.find(params[:id])
+    if @friendship.follower_user == curr_user
+      @friendship.destroy
+    end
   end
+
+
+
 
   private
   def get_friendship
@@ -24,6 +34,7 @@ class Api::V1::FriendshipsController < ApplicationController
   end
 
   def friendship_params
+    byebug
     params.require(:friendships).permit(:follower_id, :followee_id)
   end
 
