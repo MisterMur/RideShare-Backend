@@ -18,6 +18,7 @@ Company.create(name: "Lyft")
 
 #########
 ### FORUM
+
 Forum.create(topic: "Newbs", tags: ["Uber for life", "NYC", "driving"])
 Forum.create(topic: "LyftLyfe", tags: ["Lyft for life", "NYC", "driving"])
 Forum.create(topic: "NYC Drivers", tags: ["Uber for life", "NYC", "driving"])
