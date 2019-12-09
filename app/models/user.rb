@@ -2,7 +2,8 @@ class User < ApplicationRecord
   has_many :user_companies
   has_many :companies, through: :user_companies
   has_many :messages
-  has_many :forums, through: :messages
+  # has_many :forums, through: :messages
+  has_many :forums, -> { distinct }, through: :messages
   has_many :rides
 
   has_one_attached :profile_pic
