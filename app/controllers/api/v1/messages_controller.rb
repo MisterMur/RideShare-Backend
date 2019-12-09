@@ -26,6 +26,13 @@ class Api::V1::MessagesController < ApplicationController
     @message=Message.find(params[:id])
   end
 
+  def check_forum_exist
+    f= Forum.find(params[:forum_id])
+    if f!=nil
+      
+    end
+  end
+
   def message_params
     params.require(:message).permit(:user_id, :forum_id, :content, :user, :forum)
   end

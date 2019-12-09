@@ -3,7 +3,7 @@ class Api::V1::UsersController < ApplicationController
 
   def index
     @users=User.all
-    render json: @users, :include => [:companies,:rides,:messages]#,:followers]
+    render json: @users, :include => [:companies,:rides,:messages,:forums]#,:followers]
     # render json: @users, :include => [:companies,:rides,:messages,:forums]#,:followers]
 
   end
@@ -11,7 +11,7 @@ class Api::V1::UsersController < ApplicationController
   def show
     @user = get_user
     # render :json => @post.as_json(methods: :image_url)
-    render json: @user, :include => [:companies,:rides,:messages,:followers]
+    render json: @user, :include => [:companies,:rides,:messages,:followers,:forums]
   end
 
   def create
