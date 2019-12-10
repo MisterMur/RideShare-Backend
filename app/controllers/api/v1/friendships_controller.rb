@@ -1,9 +1,12 @@
 class Api::V1::FriendshipsController < ApplicationController
   def index
-    # @friendships=Friendship.all
-    @active_relationships = curr_user.active_relationships
-    @passive_relationships = curr_user.passive_relationships
-    # render json: @friendships
+    @friendships=Friendship.all
+    # @active_relationships = curr_user.active_relationships
+    # @passive_relationships = curr_user.passive_relationships
+
+    # @followee_follows = get_user.follow_follows
+    # @follower_follows = get_user.follower_follows
+    render json: @friendships
   end
 
   def show
@@ -13,7 +16,7 @@ class Api::V1::FriendshipsController < ApplicationController
   def create
     # byebug
     @followed_user = User.find(params[:friendship][:followee_id])
-    @friendship = curr_user.active_relationships.new(followee_id: @followed_user.id)
+    @friendship =  .active_relationships.new(followee_id: @followed_user.id)
 
     render json: @friendship
   end
@@ -29,6 +32,10 @@ class Api::V1::FriendshipsController < ApplicationController
 
 
   private
+  def get_user
+
+     User.find(params[:friendship][:follower_id])
+  end
   def get_friendship
     @friendship=Friendship.find(params[:id])
   end

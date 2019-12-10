@@ -29,9 +29,10 @@ class ApplicationController < ActionController::API
   end
 
   def curr_user
+    # debugger
    user_id = decode_token[0]["user_id"]
    User.find(user_id)
-   byebug
+   # byebug
    # who is the current user maybe we don't need to authorize the route but it might be nice to know
    # who the user is to see whether or not they can validly access something
   end
