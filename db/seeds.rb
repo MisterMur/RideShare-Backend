@@ -29,7 +29,7 @@ Forum.create(topic: "Bk ", tags: ["Uber for life", "NYC", "driving"])
 User.create(name: 'Jordan',username:'Jordan', car:"Jeep", rating:"4.8",experience:5, location:"NYC", password_digest: BCrypt::Password.create('1234') )
 
 User.create(name: 'Zev',username:'Zev', car:"Porsche", rating:"4.5", experience:2, location:"NYC", password_digest: BCrypt::Password.create('1234'))
-User.create(name: 'Brian',username:'bri', car:"Infiniti Q50s", rating:"4.8",experience:5, location:"NYC",password_digest: BCrypt::Password.create('1234') )
+User.create(name: 'Guest',username:'guest', car:"Infiniti Q50s", rating:"4.8",experience:5, location:"NYC",password_digest: BCrypt::Password.create('1234') )
 
 User.create(username: "Zach", password_digest: BCrypt::Password.create('1234'), name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
 User.create(username: "Evans",   password_digest: BCrypt::Password.create('1234'), name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
