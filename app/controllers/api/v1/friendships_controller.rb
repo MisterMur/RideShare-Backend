@@ -16,7 +16,7 @@ class Api::V1::FriendshipsController < ApplicationController
   def create
     # byebug
     @followed_user = User.find(params[:friendship][:followee_id])
-    @friendship =  .active_relationships.new(followee_id: @followed_user.id)
+    @friendship =  active_relationships.new(followee_id: @followed_user.id)
 
     render json: @friendship
   end
