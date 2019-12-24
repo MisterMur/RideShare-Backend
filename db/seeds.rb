@@ -47,8 +47,8 @@ User.all.each_with_index { |u,idx|
 #########
 ### USERCOMPANY JOIN DATA
 UserCompany.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id)
-UserCompany.create(user_id: User.find_by(name: "Brian").id, company_id: Company.find_by(name: "Uber").id)
-UserCompany.create(user_id: User.find_by(name: "Brian").id, company_id: Company.find_by(name: "Lyft").id)
+UserCompany.create(user_id: User.find_by(name: "Guest").id, company_id: Company.find_by(name: "Uber").id)
+UserCompany.create(user_id: User.find_by(name: "Guest").id, company_id: Company.find_by(name: "Lyft").id)
 UserCompany.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Lyft").id)
 
 #########
@@ -61,7 +61,7 @@ Message.create(user_id: User.find_by(name: "Zev").id, forum_id: Forum.find_by(to
 Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 22, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
 Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id, distance: 200, price: 28, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "LI", end_location: "Hamptons")
 Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Lyft").id, distance: 20, price: 42, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "Queens", end_location: "Bronx")
-Ride.create(user_id: User.find_by(name: "Brian").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 12, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "Queens", end_location: "Brooklyn")
+Ride.create(user_id: User.find_by(name: "Guest").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 12, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "Queens", end_location: "Brooklyn")
 Ride.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 18, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "LI", end_location: "Brooklyn")
 
 Ride.create(user_id: User.find_by(name: "Humzah").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 15, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "LI", end_location: "Brooklyn")
@@ -87,7 +87,7 @@ Ride.create(user_id: User.find_by(name: "Humzah").id, company_id: Company.find_b
 Ride.create(user_id: User.find_by(name: "Evans").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 39, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
 Ride.create(user_id: User.find_by(name: "Evans").id, company_id: Company.find_by(name: "Uber").id, distance: 200, price: 29, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "LI", end_location: "Hamptons")
 Ride.create(user_id: User.find_by(name: "Zach").id, company_id: Company.find_by(name: "Lyft").id, distance: 20, price: 59, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "Queens", end_location: "Bronx")
-Ride.create(user_id: User.find_by(name: "Brian").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 44, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
+Ride.create(user_id: User.find_by(name: "Guest").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 44, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
 Ride.create(user_id: User.find_by(name: "Jordan").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 12, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
 
 Ride.create(user_id: User.find_by(name: "Zev").id, company_id: Company.find_by(name: "Uber").id, distance: 2, price: 123, started_at: DateTime.now, end_at: DateTime.now+1, start_location: "NYC", end_location: "Brooklyn")
@@ -99,16 +99,16 @@ Ride.create(user_id: User.find_by(name: "Mike Chang").id, company_id: Company.fi
 
 #########
 ### FOLLOWING/FOLLOWER FRIENDSHIP DATA
-Friendship.create(followee_id: User.find_by(name: "Brian").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Brian").id, follower_id: User.find_by(name: "Jordan").id)
+Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Mike Chang").id)
+Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Jordan").id)
 Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Mike Chang").id)
 Friendship.create(followee_id: User.find_by(name: "Jordan").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Brian").id, follower_id: User.find_by(name: "Evans").id)
+Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Evans").id)
 Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Mike Chang").id)
 Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Evans").id)
 Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Jordan").id)
 Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Melissa").id)
-Friendship.create(followee_id: User.find_by(name: "Brian").id, follower_id: User.find_by(name: "Brandon").id)
+Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Brandon").id)
 Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Melissa").id)
 Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Zev").id)
 Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Evans").id)
