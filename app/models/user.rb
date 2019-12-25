@@ -40,18 +40,22 @@ end
  # has_many :following, through: :following_relationships, source: :following
 
  def follow(user_id)
-     follower_relationships.create(following_id: user_id)
+   # follower_relationships
+     active_relationships.create(following_id: user_id)
    end
 
  def unfollow(user_id)
-   followee_relationships.find_by(following_id: user_id).destroy
+   active_relationships.find_by(following_id: user_id).destroy
  end
  #this working already below
+ has_many :active_relationships, class_name:  "Friendship",
+                                   foreign_key: "follower_id",
+                                   dependent:   :destroy
+  has_many :following, through: :active_relationships, source: :folowee
 
-has_many :follower_follows, foreign_key: :followee_id, class_name: "Friendship"
-  has_many :followers, through: :follower_follows, source: :follower
+  has_many :passive_relationships, foreign_key: :followee_id, class_name: "Friendship" , dependent: :destroy
+  has_many :followers, through: :passive_relationships, source: :follower
 
-has_many :followee_follows, foreign_key: :follower_id, class_name: "Friendship"
-  has_many :followees, through: :followee_follows, source: :folowee
+# has_many :followee_follows, foreign_key: :follower_id, class_name: "Friendship"
 
 end

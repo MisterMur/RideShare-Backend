@@ -14,9 +14,11 @@ class Api::V1::FriendshipsController < ApplicationController
   end
 
   def create
-    # byebug
-    @followed_user = User.find(params[:friendship][:followee_id])
-    @friendship =  active_relationships.new(followee_id: @followed_user.id)
+    @followee_user = User.find(params[:followee_id])
+    @friendship =   @followee_user.active_relationships.create(follower_id: params[:follower_id])
+    byebug
+
+    # @friendship =  active_relationships.new(followee_id: @followed_user.id)
 
     render json: @friendship
   end
