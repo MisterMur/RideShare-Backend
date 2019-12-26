@@ -5,12 +5,16 @@ Rails.application.routes.draw do
       resources :rides
       resources :messages
       resources :user_companies
-      resources :users
       resources :forums
       resources :companies
       resources :friendships
       post "/login", to: "auth#login"
       get '/auto_login', to: "auth#auto_login"
+      resources :users do
+        member do
+          get :following, :followers
+        end
+      end
 
     end
   end

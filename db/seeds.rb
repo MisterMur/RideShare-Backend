@@ -26,10 +26,10 @@ Forum.create(topic: "Bk ", tags: ["Uber for life", "NYC", "driving"])
 
 #########
 ### USER DATA
+User.create(name: 'Guest',username:'guest', car:"Infiniti Q50s", rating:"4.8",experience:5, location:"NYC",password_digest: BCrypt::Password.create('1234') )
 User.create(name: 'Jordan',username:'Jordan', car:"Jeep", rating:"4.8",experience:5, location:"NYC", password_digest: BCrypt::Password.create('1234') )
 
 User.create(name: 'Zev',username:'Zev', car:"Porsche", rating:"4.5", experience:2, location:"NYC", password_digest: BCrypt::Password.create('1234'))
-User.create(name: 'Guest',username:'guest', car:"Infiniti Q50s", rating:"4.8",experience:5, location:"NYC",password_digest: BCrypt::Password.create('1234') )
 
 User.create(username: "Zach", password_digest: BCrypt::Password.create('1234'), name: "Zach", car:"Boston DuckBoat", rating:"3.6", experience:5, location:"Boston")
 User.create(username: "Evans",   password_digest: BCrypt::Password.create('1234'), name: "Evans", car:"HUMVEE", rating:"2.4", experience:10, location:"NYC")
@@ -99,20 +99,27 @@ Ride.create(user_id: User.find_by(name: "Mike Chang").id, company_id: Company.fi
 
 #########
 ### FOLLOWING/FOLLOWER FRIENDSHIP DATA
-Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Jordan").id)
-Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Jordan").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Evans").id)
-Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Mike Chang").id)
-Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Evans").id)
-Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Jordan").id)
-Friendship.create(followee_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Melissa").id)
-Friendship.create(followee_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Brandon").id)
-Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Melissa").id)
-Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Zev").id)
-Friendship.create(followee_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Evans").id)
-Friendship.create(followee_id: User.find_by(name: "Evans").id, follower_id: User.find_by(name: "Melissa").id)
-Friendship.create(followee_id: User.find_by(name: "Jordan").id, follower_id: User.find_by(name: "Brandon").id)
-Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Brandon").id)
-Friendship.create(followee_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Zev").id)
+users = User.all
+user  = users.find_by(name:"Guest")
+following = users[2..8]
+followers = users[3..7]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
+
+# Friendship.create(followed_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Mike Chang").id)
+# Friendship.create(followed_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Jordan").id)
+# Friendship.create(followed_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Mike Chang").id)
+# Friendship.create(followed_id: User.find_by(name: "Jordan").id, follower_id: User.find_by(name: "Mike Chang").id)
+# Friendship.create(followed_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Evans").id)
+# Friendship.create(followed_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Mike Chang").id)
+# Friendship.create(followed_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Evans").id)
+# Friendship.create(followed_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Jordan").id)
+# Friendship.create(followed_id: User.find_by(name: "Zev").id, follower_id: User.find_by(name: "Melissa").id)
+# Friendship.create(followed_id: User.find_by(name: "Guest").id, follower_id: User.find_by(name: "Brandon").id)
+# Friendship.create(followed_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Melissa").id)
+# Friendship.create(followed_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Zev").id)
+# Friendship.create(followed_id: User.find_by(name: "Mike Chang").id, follower_id: User.find_by(name: "Evans").id)
+# Friendship.create(followed_id: User.find_by(name: "Evans").id, follower_id: User.find_by(name: "Melissa").id)
+# Friendship.create(followed_id: User.find_by(name: "Jordan").id, follower_id: User.find_by(name: "Brandon").id)
+# Friendship.create(followed_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Brandon").id)
+# Friendship.create(followed_id: User.find_by(name: "Humzah").id, follower_id: User.find_by(name: "Zev").id)
