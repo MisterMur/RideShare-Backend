@@ -10,12 +10,12 @@ class Api::V1::FriendshipsController < ApplicationController
 
   def create
     get_user.follow(get_other_user)
+    # byebug
 
   end
 
   def destroy
     get_user.unfollow(get_other_user)
-    byebug
   end
 
 
