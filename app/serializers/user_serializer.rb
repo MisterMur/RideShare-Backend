@@ -14,18 +14,6 @@ class UserSerializer < ActiveModel::Serializer
   has_many :followers
 	has_many :following
 
-#trying this below
 
-	# def profile_pic
-	# 	return unless object.profile_pic.attached?
-	# 	# debugger
-	# 	object.profile_pic.blob.attributes
-	# 			.slice('filename', 'byte_size')
-	# 			.merge(url: image_url)
-	# 			.tap { |attrs| attrs['name'] = attrs.delete('filename') }
-	# end
-	#
-	# def image_url
-	# 	url_for(object.profile_pic)
-	# end
+
 end
