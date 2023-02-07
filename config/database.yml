@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: rideshareapidevelopment
-  username: postgres
-  password: postgres
+  username: brianmurillo
+  password: adminadmin
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

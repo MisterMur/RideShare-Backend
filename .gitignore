@@ -18,8 +18,10 @@
 
 .env
 /config/app_environment_variables.rb
+/.env
 
 
 #dont include log files
 /log/development.log
 /log/production.log
+log/
