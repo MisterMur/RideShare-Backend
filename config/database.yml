@@ -82,6 +82,6 @@ development:
 #
 production:
   <<: *default
-  database: rideshareapiproduction
-  username: rideshareapi
-  password: <%= ENV['RIDESHARE_DATABASE_PASSWORD'] %>
+  database: <%= ENV['PROD_DB'] %>
+  username: <%= ENV['PROD_DBUSER'] %>
+  password: <%= ENV['PROD_DBPASS'] %>
