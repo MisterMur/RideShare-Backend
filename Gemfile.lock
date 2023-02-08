@@ -88,6 +88,7 @@ GEM
     aws-sigv4 (1.5.2)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.18)
+    bcrypt (3.1.18-java)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -97,9 +98,13 @@ GEM
     concurrent-ruby (1.2.0)
     crass (1.0.6)
     date (3.3.3)
+    date (3.3.3-java)
     diff-lcs (1.5.0)
     erubi (1.12.0)
     ffi (1.15.5)
+    ffi (1.15.5-java)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -125,6 +130,7 @@ GEM
     mini_portile2 (2.8.1)
     minitest (5.17.0)
     msgpack (1.6.0)
+    msgpack (1.6.0-java)
     net-imap (0.3.4)
       date
       net-protocol
@@ -135,14 +141,25 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
+    nio4r (2.5.8-java)
     nokogiri (1.14.1)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     nokogiri (1.14.1-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.14.1-java)
+      racc (~> 1.4)
+    nokogiri (1.14.1-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.14.1-x86-mingw32)
+      racc (~> 1.4)
     pg (1.4.5)
+    pg (1.4.5-x64-mingw32)
+    pg (1.4.5-x86-mingw32)
     puma (3.12.6)
+    puma (3.12.6-java)
     racc (1.6.2)
+    racc (1.6.2-java)
     rack (2.2.6.2)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
@@ -203,14 +220,22 @@ GEM
     timeout (0.3.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.7)
+      tzinfo (>= 1.0.0)
     websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.5-java)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     zeitwerk (2.6.6)
 
 PLATFORMS
   arm64-darwin-22
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.10)
