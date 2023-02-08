@@ -16,9 +16,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-.env
-/config/app_environment_variables.rb
 /.env
+/config/app_environment_variables.rb
+
 
 
 #dont include log files

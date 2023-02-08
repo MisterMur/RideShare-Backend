@@ -72,7 +72,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     aws-eventstream (1.2.0)
-    aws-partitions (1.707.0)
+    aws-partitions (1.708.0)
     aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
@@ -210,10 +210,10 @@ GEM
     rspec-support (3.12.0)
     ruby_dep (1.5.0)
     rubytest (0.8.1)
-    spring (2.1.1)
-    spring-watcher-listen (2.0.1)
+    spring (4.0.0)
+    spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
-      spring (>= 1.2, < 3.0)
+      spring (>= 4)
     test (1.0.0)
       rubytest
     thor (1.2.1)
@@ -251,7 +251,7 @@ DEPENDENCIES
   rails (~> 7.0.4)
   rspec
   spring
-  spring-watcher-listen (~> 2.0.0)
+  spring-watcher-listen
   test
   tzinfo-data
 

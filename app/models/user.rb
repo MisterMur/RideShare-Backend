@@ -14,7 +14,7 @@ class User < ApplicationRecord
 
   include Rails.application.routes.url_helpers
   def image_url
-      profile_pic.service_url
+      profile_pic.url
   end
 
   def follow(other_user)
