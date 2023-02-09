@@ -26,6 +26,11 @@ class Api::V1::UsersController < ApplicationController
       companies: []
 
     )
+    projectDir = Rails.root.join('app','res').to_s
+
+    user.profile_pic.attach(io: File.open(projectDir+"/defaultProfilePic.jpg"), filename: "defaultProfilePic.jpg", content_type: "image/jpg")
+
+
 
 		if user.save
 			jwt = encode_token({user_id: user.id})
