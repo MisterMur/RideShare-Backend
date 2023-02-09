@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       resources :users do
         member do
           get :following, :followers
+          post "/imageupload", to: "users#image_upload"
         end
       end
 

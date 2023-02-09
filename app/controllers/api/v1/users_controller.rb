@@ -13,7 +13,7 @@ class Api::V1::UsersController < ApplicationController
     # render :json => @post.as_json(methods: :image_url)
     render json: @user, :include => [:companies,:rides,:messages,:followers,:following,:forums]
   end
-
+  
   def create
     user = User.new(
       name: params[:name],
@@ -38,6 +38,12 @@ class Api::V1::UsersController < ApplicationController
 		else
 			render json: {errors: user.errors.full_messages}
 		end
+  end
+
+  def image_upload
+    user = get_user
+    user.profile_pic.attach(params[:image])
+    render json: {user: UserSerializer.new(user)}
   end
 
   def update
@@ -66,8 +72,12 @@ private
     @user=User.find(params[:id])
   end
 
+  def get_image
+    params.permit(:image)
+  end
+
   def user_params
-    params.require(:user).permit(:username,:password,:name,:experience,:location,:rating,:companies,:car)
+    params.require(:user).permit(:username,:password,:name,:experience,:location,:rating,:companies,:car,:image)
   end
 
   def company_params
